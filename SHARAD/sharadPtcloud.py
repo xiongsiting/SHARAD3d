@@ -379,7 +379,7 @@ for k in xrange(1,2):
     outfile = '/Users/xst/Desktop/SURFACE/surface-%s_flt.txt' %k
     filterPoints(ptfile, outfile, 30000, 30000, kz = 1, kv = 3)
 '''
-
+'''
 clusterPoints('./Results-6/subpt.txt', './SURFACE-6')
 
 for k in xrange(1,8):
@@ -389,6 +389,7 @@ for k in xrange(1,8):
     ptfile = outfile
     outfile = './SURFACE-6/surface-%s_flt.tif' %k
     interpolatePoints(ptfile, outfile)
+'''
 '''
 #clusterPoints('./Results-1/subpt.txt', './SURFACE-1')
 
