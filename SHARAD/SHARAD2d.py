@@ -56,7 +56,7 @@ class sharadProc:
         The class takes as 4 input parameters:
         filepath : folder path which contains all SHARAD products
         track ID : one track No.
-        area : [minlat, maxlat, minlon, maxlon] targets the interested area
+        roifile : a shapefile defining the interested area
         dtmfile : path to DTM file which used for simulating cluttergram
     '''
     
@@ -91,7 +91,7 @@ class sharadProc:
 
         if datapath and trackID:
             self.readData()
-            if area:
+            if :
                 self.clipDatabyShape(roifile)
     
     def setDataFolder(self, datapath):
